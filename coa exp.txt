@@ -321,7 +321,7 @@ Objective-1(LARGEST IN ARRAY)
 	 ldr r2, =array
     back:  ldr r3, [r2], #4
 	   cmp r4, r3
-	   blt fwd
+	   bgt fwd
            mov r4, r3
 
     fwd:  subs r1, r1, #01
@@ -333,7 +333,7 @@ Objective-1(LARGEST IN ARRAY)
 	 array: .word 0x15, 0x35, 0x45, 0x10, 0x4f 
     result: 
 
-  Objectiv-2(SMALLEST IN ARRAY)
+  Objectiv-3(EVEN & ODD NUMBER SEPARATE)
         .global _start
         _start:
 	
@@ -359,7 +359,7 @@ Objective-1(LARGEST IN ARRAY)
 		even: 	.word 0,0,0,0,0
         result:
 
-Objective-3(EVEN & ODD NUMBER SEPARATE)
+Objective-2(SMALLEST IN ARRAY)
      .global _start
         _start:
 	
